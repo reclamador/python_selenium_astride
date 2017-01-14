@@ -20,7 +20,7 @@ script:
     - flake8 selenium_astride tests
     - coverage run --source selenium_astride setup.py test
 
-after_successs:
+after_success:
     - coveralls
 
 
