@@ -3,7 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import StaleElementReferenceException
 
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 
 class BasePage(object):
