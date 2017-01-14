@@ -1,0 +1,20 @@
+# Config file for automatic testing at travis-ci.org
+# This file will be regenerated if you run travis_pypi_setup.py
+
+language: python
+python: 2.7
+
+before_install:
+    - pip install coveralls
+
+install:
+    - pip install -r requirements/test.txt
+
+script:
+    - flake8 selenium_astride tests
+    - coverage run --source selenium astride
+
+ after_successs:
+    - coveralls
+
+
