@@ -3,7 +3,7 @@ Selenium Astride
 ===============================
 
 
-.. image:: https://img.shields.io/pypi/v/python_selenium_astride.svg
+.. image:: https://img.shields.io/pypi/v/selenium_astride.svg
         :target: https://pypi.python.org/pypi/selenium_astride
 
 .. image:: https://img.shields.io/travis/jlmadurga/python_selenium_astride.svg
