@@ -25,7 +25,7 @@ setup(
     long_description=readme + '\n\n' + history,
     author="Juan Madurga",
     author_email='jlmadurga@gmail.com',
-    url='https://github.com/jlmadurga/python_selenium_astride',
+    url='https://github.com/reclamador/python_selenium_astride',
     packages=[
         'selenium_astride',
     ],
