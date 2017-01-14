@@ -14,7 +14,7 @@ install:
 
 script:
     - flake8 selenium_astride tests
-    - coverage run --source selenium astride
+    - coverage run --source selenium_astride
 
 after_successs:
     - coveralls
