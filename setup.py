@@ -10,7 +10,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'selenium==2.53.3'
+    'selenium==3.8.0'
 ]
 
 test_requirements = [
