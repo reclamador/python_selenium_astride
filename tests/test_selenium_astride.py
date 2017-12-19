@@ -65,7 +65,10 @@ class SeleniumAstrideTest(LiveServerTestCase):
 
     def setUp(self):
         self.app = self.create_app()
-        self.browser = webdriver.Firefox()
+        options = webdriver.ChromeOptions()
+        options.add_argument('headless')
+        options.add_argument('disable-gpu')
+        self.browser = webdriver.Chrome(options=options)
         self.browser.implicitly_wait(3)
 
     def tearDown(self):
