@@ -2,6 +2,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import StaleElementReferenceException, WebDriverException
+from time import sleep
 
 __version__ = '0.3.0'
 
@@ -27,7 +28,14 @@ class BasePage(object):
             driver.implicitly_wait(1)
             element = WebDriverWait(driver, float(timeout)).until(EC.element_to_be_clickable(locator),
                                                                   self._get_trace())
-        element.click()
+        try:
+            element.click()
+        except WebDriverException:
+            sleep(1)
+            element = WebDriverWait(driver, float(timeout)).until(EC.element_to_be_clickable(locator),
+                                                                  self._get_trace())
+            element.click()
+
 
     def _wait_for_element(self, locator, timeout=10.0):
         driver = self.driver
