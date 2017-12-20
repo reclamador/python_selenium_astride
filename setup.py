@@ -20,7 +20,7 @@ test_requirements = [
 
 setup(
     name='selenium_astride',
-    version='0.3.0',
+    version='0.3.1',
     description="Framework to use Selenium loud and clear, astride. Use it with Django, Flask or your favourite web framework.",
     long_description=readme + '\n\n' + history,
     author="Juan Madurga",

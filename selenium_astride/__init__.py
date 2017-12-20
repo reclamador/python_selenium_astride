@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import StaleElementReferenceException, WebDriverException
 from time import sleep
 
-__version__ = '0.3.0'
+__version__ = '0.3.1'
 
 
 class BasePage(object):
